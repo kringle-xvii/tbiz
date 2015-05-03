@@ -5,3 +5,10 @@ body {
 h1 {
 	color: deeppink;
 }
+
+#player {
+    position: absolute;
+    left: 0px;
+    top: -100000px !important;
+    z-index: 0;
+}
