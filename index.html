@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Taint</title>
 		<link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css" />
 		<link rel="stylesheet" href="index.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="index.js" async></script>
 	</head>
 	<body>
 		<iframe 
@@ -10,10 +14,15 @@
 			height="360" 
 			title="YouTube video player" 
 			id="player" 
+			src="" 
 			frameborder="0" 
 			allowfullscreen="1">
 		</iframe>
 		
 		<h1>Taint</h1>
+		
+		<ul class="small-block-grid-3" id="taint-grid">
+		</ul>
+		
 	</body>
 </html>
