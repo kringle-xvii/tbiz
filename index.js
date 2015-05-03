@@ -13,6 +13,7 @@
 		
 	$(function() {
 		playThatFunkyMusic();
+		getRedditImages();
 		
 		function playThatFunkyMusic() {
 			var youtubeLink = _.template(youtubeBaseUrl)({
@@ -21,6 +22,7 @@
 			$('#player').attr('src', youtubeLink);	
 		}
 		
+		function getRedditImages() {
 			var jsonUrl = _.template('http://www.reddit.com/r/<%= subreddit %>.json')({
 				subreddit: _.sample(subreddits)
 			});
